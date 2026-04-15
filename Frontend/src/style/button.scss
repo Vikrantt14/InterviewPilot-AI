@@ -1,0 +1,25 @@
+.button {
+  border: none;
+  padding: 0.75rem;
+  border-radius: 0.7rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.primary-button {
+  background: #fb4c4c;
+  color: #ffffff;
+
+  &:hover {
+    background: #d83e3e;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(251, 76, 76, 0.4); // ✅ cleaner shadow
+  }
+
+  &:active {
+    transform: scale(0.97);
+  }
+}

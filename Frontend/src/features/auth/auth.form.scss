@@ -1,0 +1,90 @@
+main {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #000; // ✅ pure black background
+}
+
+.form-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+
+  color: #fff;
+}
+
+h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+label {
+  font-size: 0.9rem;
+  color: #d1d5db;
+}
+
+input {
+  padding: 0.8rem 1rem;
+  border-radius: 0.7rem;
+  border: none;
+  outline: none;
+
+  background: #e5e5e5; // ✅ light grey input like image
+  color: #000;
+
+  font-size: 0.95rem;
+}
+
+input::placeholder {
+  color: #6b7280;
+}
+
+/* Button */
+// .button {
+//   border: none;
+//   padding: 0.85rem;
+//   border-radius: 999px; // ✅ pill shape
+//   font-size: 1rem;
+//   font-weight: 500;
+//   cursor: pointer;
+// }
+
+// .primary-button {
+//   background: #ff0033; // ✅ bright red
+//   color: #fff;
+//   margin-top: 0.5rem;
+// }
+
+// .primary-button:hover {
+//   background: #e6002e;
+// }
+
+/* Bottom text */
+p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #d1d5db;
+  text-align: center;
+}
+
+a {
+  color: #ff0033;
+  text-decoration: none;
+  font-weight: 500;
+}
