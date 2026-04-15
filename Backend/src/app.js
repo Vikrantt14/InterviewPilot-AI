@@ -9,14 +9,23 @@ const interviewRouter = require("./routes/interview.routes")
 
 app.use(express.json())
 app.use(cookieParser());
+
 app.use(cors({
-  origin: ["http://localhost:5173", "http://localhost:5174"],
+  origin: [
+    "http://localhost:5173",
+    "http://localhost:5174",
+    "https://interviewpilot-frontend.onrender.com"
+  ],
   credentials: true
 }))
 
-// FOR ALL AUTH APIs PREFIX
+// ✅ ROOT ROUTE
+app.get("/", (req, res) => {
+  res.send("🚀 InterviewPilot AI Backend is running");
+});
+
+// ROUTES
 app.use("/api/auth", authRouter)
 app.use("/api/interview", interviewRouter)
-
 
 module.exports = app;
